@@ -1,4 +1,10 @@
-2. write a rust program that 
+prompt for Assignment four 
+build a working command line calculator capable of doing cgpa calculations 
+
+
+prompt for Assignment five 
+
+. write a rust program that 
     * Asks a user how many students are in the class (min of 10)
     * For each user, prompt them to give their name and score
     * For loop to process each student score
