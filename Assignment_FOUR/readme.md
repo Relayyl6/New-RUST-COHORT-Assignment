@@ -1,8 +1,8 @@
-prompt for Assignment four 
+# prompt for Assignment four 
 build a working command line calculator capable of doing cgpa calculations 
 
 
-prompt for Assignment five 
+# prompt for Assignment five 
 
 . write a rust program that 
     * Asks a user how many students are in the class (min of 10)
