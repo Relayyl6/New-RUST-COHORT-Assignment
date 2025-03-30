@@ -27,7 +27,7 @@ fn main() {
                                       .expect("Please enter a valid number");
     
     // let index = option_type + 1.0;
-    let index: usize = (option_type + 1.0).round() as usize;
+    let index: usize = (option_type - 1.0).round() as usize;
     println!("Selected operation = {}", operation[index]);
     
     let option_type = option_type.to_string();
@@ -57,23 +57,23 @@ fn main() {
                                         .expect("Please enter a valid number");
 
         if option_type == "1" {
-            let result = first_input + &second_input;
-            println!("The sum is {result}");
+            let sum = first_input + &second_input;
+            println!("The sum is {sum}");
         } else if option_type == "2" {
             if first_input == 0.0 {
                 println!("Error: Division by zero is not allowed");
             } else if second_input == 0.0 {
                 println!("Error: Division by zero is not allowed");
             } else {
-                let result = first_input / second_input;
-                println!("The sum is {result}");
+                let dividend = first_input / &second_input;
+                println!("The dividend is {dividend}");
             }
         } else if option_type == "3" {
-            let result = first_input - second_input;
-            println!("The sum is {result}");
+            let difference = first_input - &second_input;
+            println!("The difference is {difference}");
         } else if option_type == "4" {
-            let result = first_input * second_input;
-            println!("The sum is {result}");
+            let multiple = first_input * &second_input;
+            println!("The multiplication is {multiple}");
         }},
         Ok(5) => {
             cgpa_calc()
@@ -170,53 +170,7 @@ fn cgpa_calc() {
 
 
 
-    // if count != 12 {
-    //     // let current_course_num = &num;
-    //     let remaining = 22;
-    //         'counting_cgpa: loop {
-    //             println!("Credit load = {} left", remaining);
-    //             if count < num_of_courses{
-    //                 let course_code: String = String::new();
-    //                     io::stdin()
-    //                         .read_line(&mut course_code)
-    //                         .expect("Enter a valid student number");
-
-
-    //                 let course_credit: String = String::new();
-    //                     io::stdin()
-    //                         .read_line(&mut course_code)
-    //                         .expect("Enter a valid student number");
-
-                        
-    //                 let grade_average: String = String::new();
-    //                     io::stdin()
-    //                         .read_line(&mut course_code)
-    //                         .expect("Enter a valid student number");
-                       
-                       
-    //             let grade: String = grade_calculation(grade_average)
-    //             count = count + 1;
-
-    //             if count == 11 {
-    //                 break 'counting_cgpa;
-    //             }
-    //             }   
-    //             current_credit = course_credit.sum();
-    //             remainder = remaining - current_credit;
-    //         }          
-    // } else {
-    //     panic!("Beyond course threshold, please check again")
-    // }
-    
-    // let total_credit_load = remaining;
-    // let total_course_credits = 
-    
-    
-    // println!("You have {} number of courses", num_of_courses);
-
-    // let cgpa = calculated_cgpa(total_course_credits, total_credit_load);
-    // println!("Overall CGPA for the {} number of courses is {}", num_of_courses, cgpa)
-}
+    // 
 
 
 
