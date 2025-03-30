@@ -1,7 +1,7 @@
 use std::io;
 
 fn main() {
-    println!("Pick an operation: \n 1. addition \n 2. Division \n 3. Subtraction \n 4. Multiplication \n 5. CGPA calculator");
+    println!("Pick an operation: \n 1. Addition \n 2. Division \n 3. Subtraction \n 4. Multiplication \n 5. CGPA calculator");
 
     let mut option_type = String::new();
     io::stdin()
