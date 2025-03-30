@@ -167,13 +167,7 @@ fn cgpa_calc() {
         let formatted_cgpa = format!("{:.2}", cgpa);
         println!("The overall cgpa of the {} number of courses is {}", num_of_courses, formatted_cgpa)
     }
-
-
-
-    // 
-
-
-
+}
 fn grade_calculation(param: char) -> String {
     match param.to_ascii_uppercase() {
         'A' => String::from("5"),
