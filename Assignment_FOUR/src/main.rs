@@ -123,9 +123,7 @@ fn cgpa_calc() {
         io::stdin() 
             .read_line(& mut course_code)
             .expect("Failed to read input");
-        let _course_code: i32 = course_code.trim()
-                                          .parse()
-                                          .expect("Make sure to enter correct code");
+       let _course_code: String = course_code.trim().to_string(); // to be able to enter an alphanumerical course code without getting an error
 
         // Course credit
         println!("Enter Course Credit: ");
